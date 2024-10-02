@@ -1,14 +1,24 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+Weather App Demo (Compose Multiplatform)
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+A simple weather demo application built using Compose Multiplatform (CMP) that fetches and displays weather information based on the user’s location. This demo app supports both Android and desktop platforms with a shared codebase for UI and business logic.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+Features
 
+Location-based Weather: Automatically fetch weather data using the device’s location.
+Current Weather: Displays real-time temperature, weather conditions, and icons.
+Forecasts: Shows hourly and daily weather forecasts with detailed weather data.
+Cross-platform UI: Shared UI code for Android and desktop using Jetpack Compose Multiplatform.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+Tech Stack
+
+Jetpack Compose Multiplatform: For building the UI across Android and desktop.
+Kotlin Multiplatform: Sharing core logic between platforms.
+Kotlin Coroutines: To handle asynchronous API calls and background tasks.
+OpenWeatherMap API: For fetching real-time weather data (requires an API key).
+Ktor Client: Networking library for multiplatform API calls.
+
+Usage
+
+On launch, the app fetches the current weather based on your location.
+Use the search bar to get weather details for a specific city.
+View daily and hourly forecasts by scrolling down.
