@@ -1,6 +1,6 @@
-Weather App Demo (Compose Multiplatform)
+# Weather App Demo (Compose Multiplatform)
 
-# A simple weather demo application built using Compose Multiplatform (CMP) that fetches and displays weather information based on the user’s location. This demo app supports both Android and desktop platforms with a shared codebase for UI and business logic.
+A simple weather demo application built using Compose Multiplatform (CMP) that fetches and displays weather information based on the user’s location. This demo app supports both Android and desktop platforms with a shared codebase for UI and business logic.
 
 ## Features
 
