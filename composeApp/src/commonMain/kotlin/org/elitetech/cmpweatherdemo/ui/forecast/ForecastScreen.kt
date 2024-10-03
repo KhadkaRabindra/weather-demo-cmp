@@ -59,8 +59,8 @@ fun ForecastScreen(navController: NavController) {
         modifier = Modifier.fillMaxSize().background(
             brush = androidx.compose.ui.graphics.Brush.verticalGradient(
                 colors = listOf(
-                    androidx.compose.ui.graphics.Color(0xFF7FD4FF),
-                    androidx.compose.ui.graphics.Color(0xFF4A90E2)
+                    Color(0xFF7FD4FF),
+                    Color(0xFF4A90E2)
                 )
             )
         ).systemBarsPadding(),
